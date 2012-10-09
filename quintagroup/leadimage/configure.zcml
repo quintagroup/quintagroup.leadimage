@@ -12,13 +12,16 @@
   <grok:grok package="." />
   <i18n:registerTranslations directory="locales" />
 
-  <genericsetup:registerProfile
+  <!-- behavior is registered without separate installation profile
+       though one will be needed to extend portal_types -->
+
+  <!-- genericsetup:registerProfile
       name="default"
       title="Dexterity based lead image"
       directory="profiles/default"
       description="Extension profile for Dexterity based lead image"
       provides="Products.GenericSetup.interfaces.EXTENSION"
-      />
+      / -->
 
   <plone:behavior
         title="Lead Image"
