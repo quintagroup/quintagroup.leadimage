@@ -7,3 +7,4 @@ class LeadImageViewlet(ViewletBase):
 
     def update(self):
         self.context = ILeadImage(self.context)
+        self.available = True if self.context.image else False
