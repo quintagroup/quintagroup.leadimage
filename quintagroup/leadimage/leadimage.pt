@@ -2,5 +2,5 @@
     tal:define="_scale context/@@images;scale python: _scale.scale('image')">
     <img
         tal:condition="scale"
-        tal:replace="structure python: scale('image').tag(css_class='newsImage')" />
+        tal:replace="structure python: scale.tag(css_class='newsImage')" />
 </div>
